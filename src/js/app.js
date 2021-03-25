@@ -58,22 +58,26 @@ function UpdateText(){
     multCountText.innerText = "Current Multiplier: " + dc.getMultiplier().toFixed(2) + "x";
     autoText.innerText = "Auto Clicker Cost: "+ dc.getAutoClickerCost().toFixed(2) + " Donuts";
     multText.innerText = "Multiplier Cost: " + dc.getMultiplierCost().toFixed(2) + " Donuts";
+    UpdateButtons();
 }
-UpdateText();
-
-var myVar = setInterval(TimedAuto, 100);
-function TimedAuto(){
-    dc.DonutCount = dc.AddDonuts(dc.getAutoClickerCount() * dc.getMultiplier() / 10);
-    UpdateText();
-}
+//UpdateText();
 
 
-function resetDonut(){
-    dc = new Donut();
-    UpdateText();
+    function UpdateButtons(){
+        autoButton.disabled = !(dc.getAllDonuts() >= dc.getAutoClickerCost());
+        multButton.disabled = !(dc.getAllDonuts() >= dc.getMultiplierCost());
+    
     }
-
-
     
     
+    var myVar = setInterval(TimedAuto, 100);
+    function TimedAuto(){
+        dc.DonutCount = dc.AddDonuts(dc.getAutoClickerCount() * dc.getMultiplier() / 10);
+        UpdateText();
+    }
     
+    function resetDonut(){
+        dc = new Donut();
+        UpdateText();
+        }
+        
