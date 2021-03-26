@@ -1,3 +1,4 @@
+
 //Text 
 const donutCount = document.getElementById("donutCount");
 const autoCountText = document.getElementById("autoCountText");
@@ -81,3 +82,4 @@ function UpdateText(){
         UpdateText();
         }
         
+

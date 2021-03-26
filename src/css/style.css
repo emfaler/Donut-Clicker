@@ -1,0 +1,79 @@
+* {
+    font-family: sans-serif, Arial, Helvetica;
+    line-height: 1.618em;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background: "src\images\Donut Background.jpg";
+    
+
+    background-color:#DC8056 ;
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+    background: #326273;
+    
+    font-size: 20px
+
+    
+}
+
+nav p{
+    padding: .5em 2em;
+    color: #EEEEEE;
+}
+
+main button{
+    background-color: #77AEBB;
+    font-size: large;
+    color: #0C181C
+    
+    
+}
+
+
+
+.donutGame{
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-flow: column;
+    padding-top: 25px;
+    
+}
+
+.textContainer{
+    margin-top: 100px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+    background-color:#326273;
+    color: #EEEEEE;
+    font-size: large;
+    
+
+
+    
+}
+
+
+
