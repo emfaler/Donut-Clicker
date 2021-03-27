@@ -4,11 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Module 4 Project</title>
+    <link rel="stylesheet" href="src\css\style.css">
+    
+    
 </head>
 <body>
-    <div class="container">
-        <div class="anchor"></div>
-    </div>
-    <script src="/src/app.js"></script>
+    <nav class="modalNav">
+        
+        <p class="inspoModal"><a id="cookieLink" href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Inspiration</a></p>
+
+
+        <p id="gameInfoModal">Game Info</p>
+            <div id="myModal" class="modal">
+
+            
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Donut Clicker is a tribute to the deceivingly addicting <i>Cookie Clicker</i>. Help us create more donuts by pressing the "Click" button. Watch the number of donuts 
+                    rise as your hard work pays off. Along the way invest in donut multipliers and auto-clickers to increase your production and joy.</p>
+                </div>
+          
+          </div>
+
+          
+        <p id="aboutMeModal"><a id="gitLink" href="https://emfaler.github.io/" target="_blank">About Me</a></p>
+
+    </nav>
+
+    
+
+    <header>
+        
+        <h1 class="mainTitle">Donut Clicker</h1>
+
+        
+    </header>
+    <main class="donutGame">
+        <div class="container">
+            <div class="textContainer">
+                <div id="donutCount"> 0 </div>
+                <div id="DPS"> 0 </div>
+                <div id="autoCountText"> 0 </div>
+                <div id="multCountText"> 0 </div>
+                <div id="autoText"> 0 </div>
+                <div id="multText"> 0 </div>
+            </div>
+            
+            <div class="buttonContainer">
+                <button id="clickButton">CLICK</button>
+                <button id="autoButton">Purchase AUTO Clicker</button>
+                <button id="multButton">Purchase Donut Multiplier</button>
+                <button id="resetButton">Reset Game</button>
+            </div>
+            
+            <div class="anchor"></div>
+        </div>
+    </main>
+    
+    
+    <script src="./src/js/Donut.js"></script>
+    <script src="./src/js/app.js"></script>
 </body>
 </html>
